@@ -1,0 +1,278 @@
+ @keyframes iluminar{
+      10%{
+        box-shadow: 0px 0px 15px red;
+        -webkit-box-shadow: 0px 0px 15px red;
+        -o-box-shadow: 0px 0px 15px red;
+        -moz-box-shadow: 0px 0px 15px red;
+      }
+      30%{
+        box-shadow: 0px 0px 30px  red;
+        -webkit-box-shadow: 0px 0px 30px  red;
+        -o-box-shadow: 0px 0px 30px  red;
+        -moz-box-shadow: 0px 0px 30px  red;
+      }
+      50%{
+        box-shadow: 0px;
+        -webkit-box-shadow: 0px;
+        -moz-box-shadow: 0px;
+        -o-box-shadow: 0px;
+      }
+      70%{
+        box-shadow: 0px 0px 28px red;
+        -webkit-box-shadow: 0px 0px 28px red;
+        -o-box-shadow: 0px 0px 28px red;
+        -moz-box-shadow: 0px 0px 28px red;
+      }
+      80%{
+        box-shadow: 0px 0px 40px red;
+        -webkit-box-shadow: 0px 0px 40px red;
+        -o-box-shadow: 0px 0px 40px red;
+        -moz-box-shadow: 0px 0px 40px red;
+      }
+    }
+
+    @keyframes girar{
+        10%{
+          transform: rotate(-10deg);
+          -webkit-transform: rotate(-10deg);
+          -moz-transform: rotate(-10deg);
+          -0-transform: rotate(-10deg);
+        }
+        40%{
+          transform: rotate(130deg);
+          -webkit-transform: rotate(130deg);
+          -o-transform: rotate(130deg);
+          -moz-transform: rotate(130deg);
+        }
+        50%{
+          transform: rotate(0deg);
+        }
+        60%{
+          transform: rotate(-20deg);
+          -webkit-transform: rotate(-20deg);
+          -o-transform: rotate(-20deg);
+          -moz-transform: rotate(-20deg);
+        }
+        80%{
+          transform: rotate(-140deg);
+          -moz-transform: rotate(-140deg);
+          -o-transform: rotate(-140deg);
+          -webkit-transform: rotate(-140deg);
+        }
+        100%{
+          transform: rotate(0deg);
+        }
+      }
+
+      @keyframes flip {
+        0% {
+          -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+          transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+        }
+
+        40% {
+          -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+          transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+        }
+
+        50% {
+          -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+          transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+        }
+
+        80% {
+          -webkit-transform: perspective(400px) scale3d(.95, .95, .95);
+          transform: perspective(400px) scale3d(.95, .95, .95);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+        }
+
+        100% {
+          -webkit-transform: perspective(400px);
+          transform: perspective(400px);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+        }
+      }
+
+        #fondo{
+              width: 850px;
+              height: 450px;
+              background: no-repeat url('../img/habitacion.jpg');
+              background-size: 100%;
+              margin: auto;
+              position: relative;
+              box-shadow:inset 0px 0px 100px black;
+              -o-box-shadow:inset 0px 0px 100px black;
+              -moz-box-shadow:inset 0px 0px 100px black;
+              -webkit-box-shadow:inset 0px 0px 100px black;
+        }
+
+
+        #boy, #divisores{
+            height: 300px;
+            width: 200px;
+            position: absolute;
+            left: 14em;
+            top: 6em;
+        }
+
+        .subcontenedor{
+          float: left;
+          position: relative;
+          height: 100%;
+        }
+
+        #asideGame{
+          background: rgba(255,345,102,0.5);
+          width: 25%;
+        }
+
+        .prenda{
+          display: block;
+          height: 70px;
+          width: 70px;
+          border-radius: 50px;
+          -o-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -webkit-border-radius: 50px;
+        }
+
+        .playState{
+        	animation: iluminar 1s linear infinite;
+        	-o-animation: iluminar 1s linear infinite;
+        	-moz-animation: iluminar 1s linear infinite;
+        	-webkit-animation: iluminar 1s linear infinite;
+        	border-radius: 50px;
+        	-o-border-radius: 50px;
+        	-moz-border-radius: 50px;
+        	-webkit-border-radius: 50px;
+        }
+
+        #playContainer{
+        	margin: 8em 15em;
+        	text-align: center;
+        	color: white;
+        }
+
+        .prendaContainer{
+          display: block;
+          margin: 5px auto;
+          height: 85px;
+          width: 85px;
+        }
+
+        .animate{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            -o-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            margin: 5em 15em;
+        }
+
+        .iluminar{
+          animation: 2s iluminar linear infinite;
+        }
+
+        #modalencia{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            -o-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            margin: 5em 15em;
+        }
+
+        #restart:hover{
+          animation: girar 0.5s linear;
+          -o-animation: girar 0.5s linear;
+          -moz-animation: girar 0.5s linear;
+          -webkit-animation: girar 0.5s linear;
+        }
+
+        #restart{
+          position: absolute;
+          margin-left: -13em;
+          margin-top: 15em;
+          height: 70px;
+          width: 70px;
+          border-radius: 50px;
+          -o-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -webkit-border-radius: 50px;
+          box-shadow: 0px 5px 10px gray;
+          -o-box-shadow: 0px 5px 10px gray;
+          -moz-box-shadow: 0px 5px 10px gray;
+          -webkit-box-shadow: 0px 5px 10px gray;
+        }
+
+        #modal.normal{
+            width: 850px;
+            height: 450px;
+            background: rgba(0,0,0,0.6);
+            position: absolute;
+            z-index: 1;
+        }
+
+        .congratulation{
+            width: 850px;
+            height: 450px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        #board{
+          width:75%;
+        }
+
+        #drop1{
+          height:40%;
+        }
+
+        #drop2{
+          height:25%
+        }
+
+        #drop3{
+          height:25%;
+        }
+
+        #drop4{
+          height:10%;
+        }
+
+        .congratulation #secuencia{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            -o-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            margin: 5em 15em;
+            background: url("../img/congratulation.png") no-repeat;
+            background-size: 100%;
+            animation: 0.5s flip linear;
+            -o-animation: 0.5s flip linear;
+            -moz-animation: 0.5s flip linear;
+            -webkit-animation: 0.5s flip linear;
+        }
+
+        .prenda:hover{
+          /*animation: sacudir 1s linear;*/
+        }
+
+        .entrar{
+          animation: 1s flip linear;
+          -o-animation: 1s flip linear;
+          -moz-animation: 1s flip linear;
+          -webkit-animation: 1s flip linear;
+        }

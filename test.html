@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lazarillo | inicio</title>
+
+	<!-- meta tags  -->
+	<meta charset="UTF-8">
+	<meta name="description" content="Lazarillo es un sitio web donde podras encontrar actividades
+									  interactivas para solucionar problemas de autismo en niños">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- estilos -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+
+</head>
+<body>
+	<!-- encabezado -->
+	<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menuItems">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#tf-home">Lazarillo</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menuItems">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html" class="page-scroll">dashboard</a></li>
+            <li><a href="test.html" class="page-scroll">test</a></li>
+            <li><a href="cuenta.html" class="page-scroll">cuenta</a></li>
+            <li><a href="#tf-services" class="page-scroll">cerrar sesión</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="container-fixed">
+
+        <!-- botones de opciones -->
+
+        <div class="row">
+          <h3 class="pull-left">Test Realizados </h3>
+          <button id="btn-test" class="btn btn-primary pull-right" data-toggle="modal" data-target="#test-modal">Nuevo test</button>
+          <div class="modal fade" toggle="modal" id="test-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog"> 
+              <div class="modal-content" id="test-content">
+               <div class="modal-header"> 
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button> 
+                <h4 class="modal-title" id="myModalLabel"> This Modal title </h4>
+                 </div> 
+                 <div class="modal-body"> Add some text here </div> 
+                 <div class="modal-footer"> 
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close </button>
+                   <button type="button" class="btn btn-primary"> Submit changes </button>
+                    </div> 
+                  </div>
+          </div>
+          </div>
+        </div>
+      
+      <!-- fila para mostrar los test realizados -->
+
+          <div class="row" id="row-testFinal">
+            <section class="info-test">
+              <table class="table table-striped table-responsive">
+                <thead>
+                  <tr> <th>fecha del test</th> <th>puntaje obtenido</th> <th>Nivel de autismo</th> </tr>
+                </thead>
+                <tbody>
+                  <tr> <td>02/12/2015</td> <td>78 puntos</td> <td>Autismo clasico</td> </tr>
+                  <tr> <td>02/12/2015</td> <td>78 puntos</td> <td>Autismo clasico</td> </tr>
+                  <tr> <td>02/12/2015</td> <td>78 puntos</td> <td>Autismo clasico</td> </tr>
+                  <tr> <td>02/12/2015</td> <td>78 puntos</td> <td>Autismo clasico</td> </tr>
+                </tbody>
+              </table>              
+            </section>
+          </div>
+
+      </div>
+    </div>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
